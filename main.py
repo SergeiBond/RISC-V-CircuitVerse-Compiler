@@ -27,7 +27,7 @@ def sub_op(s):
     return s | 0b01000000000000000000000000000000
 
 def register(reg):
-    if re.match('^[x][0-9]$|^[x][1-2][0-9]$|^[x]3[0-1]$', reg):
+    if re.match('^[a][0-9]$|^[x][1-2][0-9]$|^[x]3[0-1]$', reg):
         return int(reg[1:])
     else:
         print(f"Invalid register name '{reg}'. Must be x0 ... x31.")

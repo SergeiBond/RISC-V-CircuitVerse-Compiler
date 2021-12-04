@@ -30,7 +30,7 @@ def register(reg):
     if re.match('^[a][0-9]$|^[x][1-2][0-9]$|^[x]3[0-1]$', reg):
         return int(reg[1:])
     else:
-        print(f"Invalid register name '{reg}'. Must be x0 ... x31.")
+        print(f"Invalid register name '{reg}'. Must be a0 ... a31.")
         exit(-31)
 
 def rs1(s, reg):

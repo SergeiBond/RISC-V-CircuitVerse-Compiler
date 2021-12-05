@@ -50,11 +50,11 @@ def parse(name):
         with open(name, "r") as fd:
             lines = fd.read().splitlines()
 
-            out = open("RISC_ASM_BYTECODE_UNIFIED.txt", "w")
+            out = open(name + "_BYTECODE_UNIFIED.txt", "w")
 
-            out_lo = open("RISC_ASM_BYTECODE_LO.txt", "w")
+            out_lo = open(name + "_BYTECODE_LO.txt", "w")
 
-            out_hi = open("RISC_ASM_BYTECODE_HI.txt", "w")
+            out_hi = open(name + "_BYTECODE_HI.txt", "w")
 
             output_unary = []
             output_biary_lo = []
